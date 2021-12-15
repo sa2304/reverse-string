@@ -3,6 +3,13 @@
 //
 
 #include "solution.h"
+
+using namespace std;
+
 void Solution::reverseString(std::vector<char> &s) {
-  // FIXME
+  int left = 0;
+  int right = s.size() - 1;
+  while (left < right) {
+    swap(s[left++], s[right--]);
+  }
 }
